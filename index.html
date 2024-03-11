@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finny</title>
+    <link rel="icon" href="IMG/1.png" type="image/icon type">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav>
+	<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg height="30px" width="30px">
+				<path d="M0,5 30 5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30 14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30 23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+			</span>&nbsp;&nbsp;&nbsp;&nbsp;
+	<h2>Finny</h2>
+	
+	<ul class="nav-bar">
+		<li><a href="#main">Home</a></li>
+		<li><a href="#Contact">Contact</a></li>
+		<li><a href="chatbot-master/index.html">Finny!!</a></li>
+		<li><a href="#">Feedback</a></li>
+	</ul>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a> 
+		<a href="#main">Home</a>
+		<a href="#Contact">Contact</a>
+		<a href="chatbot-master/index.html">Finny!!</a>
+		<a href="#">Feedback</a>
+	</div>
+</nav>
+	<section class="sec-1" id="main">
+		<div class="text">
+            <h3>Hello, Welcome to Finny</h3>
+            <p>This is a very simple <i>chatbot</i>, its name is Finny. It is not an AI and ML based chatbot. It is just a text type chatbot which contains predefined texts. <br>
+            It is written in HTML , CSS and JavaScript
+            <br>
+            Hope that you will Enjoy..!!
+            </p><br>
+			<button value="submit">Explore More -></button>
+
+		</div>
+		<div class="pic">
+			<img src="IMG/1.png">
+		</div>
+	</section>
+	<section class="sec-2" >
+		<h2>Some famous AI bot</h2><br><br><br>
+	<div class="scope">
+  		<span style="--i:1;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png?20230318122128" alt="not found"></span>
+  		<span style="--i:2;"><img src="https://ssl-static.libsyn.com/p/assets/5/b/f/0/5bf0dd70c2b87bb6/AoG.png" alt="not found"></span>
+  		<span style="--i:3;"><img src="https://photos5.appleinsider.com/gallery/53517-107490-Siri-xl.jpg" alt="not found"></span>
+ 		 <span style="--i:4;"><img src="https://play-lh.googleusercontent.com/X24ol80nJS3F_nUg3HlqWWzSxEnDHeAI34quN8rTjILQOoebd0Be3ZFBQrKAtMX2XyE" alt="not found"></span>
+ 		 <span style="--i:5;"><img src="https://play-lh.googleusercontent.com/kmxAt02yG8Hp-TzZHDoRGFtB70QFz7njpWQzQp8KANztd-DozlJipu8tprSn80Q8pw" alt="not found"></span>
+  		<span style="--i:6;"><img src="https://www.shutterstock.com/assets/images/shutterstock-favicon-192.png" alt="not found"></span>
+ 		 <span style="--i:7;"><img src="https://static.vecteezy.com/system/resources/previews/019/493/370/original/chatgpt-logo-openai-logo-ai-chatbot-chatgpt-copy-space-text-editorial-illustration-free-vector.jpg"></span>
+ 		 <span style="--i:8;"><img src="https://blogs.perficient.com/files/openai-avatar.png" alt="not found"></span>
+	</div>
+
+	</section>
+	<section class="sec-3" id="Contact">
+		<h1><p align="center">Let`s Get Connected</p></h1>
+    <form action="/" class="details">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> &nbsp;&nbsp;&nbsp;
+          <h2>Enter your Details here:</h2><br>
+        </div>
+        <div class="info">
+          <input class="name" type="text" name="Name" placeholder="Name*" required><br>
+          <input type="text" name="Email" placeholder="Email*" required><br>
+          <input type="tel" name="Phone Number" placeholder="PhoneNo.*" maxlength="10" required>
+          <select required>
+            <option value="course-type" selected>Select*</option>
+            <option value="short-courses">Short courses</option>
+            <option value="featured-courses">Featured courses</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate</option>
+            <option value="masters-degree">Masters degree</option>
+            <option value="postgraduate">Postgraduate</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" required><span>I agree to the <a>&nbsp;&nbsp;Privacy Poalicy for Finny.</a></span>
+        </div>
+        <button type="submit" href="/" class="btn-sbt">Submit</button>
+      </form>
+	</section>
+    <section class="sec-4">
+        <h1><p align="center">THANKS FOR VISITING!!</p></h1>
+    </section>
+	<script type="text/javascript">
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width='250px';
+			document.getElementById('main').style.marginleft='250px';
+		}
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width='0';
+			document.getElementById('main').style.marginleft='0';
+		}
+	</script>
+</body>
+</html>
