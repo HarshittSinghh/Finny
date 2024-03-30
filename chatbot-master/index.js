@@ -1,17 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const inputField = document.getElementById("input");
-  inputField.addEventListener("keydown", (e) => {
-    if (e.code === "Enter") {
-      let input = inputField.value;
-      inputField.value = "";
-      output(input);
-    }
-    else if (e.code === "13"){
-      let input = inputField.value;
-      inputField.value = "";
-      output(input);
-    }
-  });
+    const inputField = document.getElementById("input");
+    const sendButton = document.getElementById("sendButton");
+
+    // Function to handle sending message on button click
+    const sendMessage = () => {
+        let input = inputField.value.trim();
+        if (input !== "") {
+            inputField.value = "";
+            output(input);
+        }
+    };
+
+    // Add event listener to input field for Enter key press
+    inputField.addEventListener("keydown", (e) => {
+        if (e.code === "Enter") {
+            sendMessage();
+        }
+    });
+
+    // Add event listener to send button
+    sendButton.addEventListener("click", () => {
+        sendMessage();
+    });
 });
 
 function output(input) {
