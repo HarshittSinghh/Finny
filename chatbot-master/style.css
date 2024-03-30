@@ -1,7 +1,6 @@
 * {
    margin: 0;
     padding: 0;
-    
 }
 
 body {
@@ -65,7 +64,7 @@ input {
 }
 
 #bot {
-    margin-left: 60%;
+    margin-left: 80%;
 }
 
 
@@ -137,7 +136,7 @@ input {
       position: fixed;
   }
   .container img {
-      height:600px;
+      height:300px;
     }
   .chat {
     width: 75vw;
